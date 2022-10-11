@@ -1,6 +1,9 @@
-/*Read JSON data and expose to the rest of the program*/
+#ifndef JSON_H
+#define JSON_H
 
 class Json {
     public:
         std::string bGetRestResponse(const char* GetURL);
 };
+
+#endif
