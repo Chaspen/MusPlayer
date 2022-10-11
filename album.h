@@ -7,13 +7,14 @@
 
 class Album {
     public:
-        std::string bExposeAlbumData();
+        std::string bExposeAlbumData(std::string ResponseType, std::string MBID);
 
-        typedef struct bAlbumData {
+        struct bAlbumData {
             std::string     Title;
             std::string     Artist;
             std::string     Date;
-        } AlbumData;
+        }; 
+        bAlbumData AlbumData;
 };
 
 

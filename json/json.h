@@ -4,6 +4,7 @@
 class Json {
     public:
         std::string bGetRestResponse(const char* GetURL);
+
 };
 
 #endif
