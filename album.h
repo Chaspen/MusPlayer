@@ -2,7 +2,7 @@
 #define H_ALBUM
 
 
-
+#include <vector>
 
 
 class Album {
@@ -10,9 +10,9 @@ class Album {
         std::string bExposeAlbumData(std::string ResponseType, std::string MBID);
 
         struct bAlbumData {
-            std::string     Title;
-            std::string     Artist;
-            std::string     Date;
+            const char*     Title;
+            const char*     Artist;
+            const char*     Date;
         }; 
         bAlbumData AlbumData;
 };
